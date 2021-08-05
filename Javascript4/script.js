@@ -10,6 +10,16 @@ document.querySelector('.titulo3').innerHTML = "Alterado via querySelector com c
 
 
 //Number
-var x = 20
+var a = 20 // tem acesso em qualquer area do codigo
+let b = 20 // disponível apenas no escopo em que está declarada (se declarada em escopo global ela podera ser usada normalmente)
+const c = 20 //Não muda
 //String
-var y = "20"
+var d = "20" 
+/*
+let exemplo = 'luiz'
+
+let algo = 3
+if( algo == 3){
+    console.log(exemplo)
+}
+*/
