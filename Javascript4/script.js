@@ -6,6 +6,9 @@ document.getElementsByClassName('titulo2')[0].innerHTML = "Alterado via classe n
 document.getElementsByClassName('titulo2')[1].innerHTML = "Alterado via classe no array 1!"
 document.querySelector('#titulo3').innerHTML = "Alterado via querySelector com id"
 document.querySelector('.titulo3').innerHTML = "Alterado via querySelector com classe"
+document.querySelectorAll('.titulo3').innerHTML = "Alterado todos via querySelector com classe"
+
+
 
 
 
