@@ -81,3 +81,27 @@ function pegaGame(){
     let game = document.querySelector('.imagem').getAttribute('data-game')
     alert(`O jogo escolhido foi : ${game}`)
 }
+
+//FUNÇÃO que rola a tela para o inicio, com um efeito suave do 'smooth'
+function subirTela(){
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+}
+
+function escondeBotao(){
+    if(window.scrollY ===0){
+        //oculta o botão
+        document.querySelector('.btnScroll').style.display = 'none'
+    }else{
+        //mostra botão
+        document.querySelector('.btnScroll').style.display = 'block'
+
+    }
+}
+//funciona,mais não é a correta
+//setInterval(escondeBotao, 500)
+
+//evento que monitora o scroll da tela
+window.addEventListener('scroll', escondeBotao)
