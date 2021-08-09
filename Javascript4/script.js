@@ -67,3 +67,17 @@ function trocar() {
     }
 
 }
+
+//**************************************************************************************** */
+
+//trocando atributos -inserindo um valor em um atributo
+function trocarImagem(nomeDoArquivo, nomeDoJogo){
+    document.querySelector('.imagem').setAttribute('src', 'img/'+nomeDoArquivo)
+    document.querySelector('.imagem').setAttribute('data-game', nomeDoJogo)
+}
+
+//CAPTURANDO OS ATRIBUTOS
+function pegaGame(){
+    let game = document.querySelector('.imagem').getAttribute('data-game')
+    alert(`O jogo escolhido foi : ${game}`)
+}
